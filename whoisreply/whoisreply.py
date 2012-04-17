@@ -30,6 +30,9 @@
 # Just spiffed up the script to make it easier to config.
 # Made the reply selection all one line for sanity sake.
 #
+# 1.0.1
+# Fixed a little bug that would not parse both tags if you used different ones.
+#
 #TODO: Make config file.
 
 # import the necessary modules.
@@ -38,7 +41,7 @@ import random
 
 # set xchat plugin info.
 __module_name__ = "Whois Reply" 
-__module_version__ = "1.0" 
+__module_version__ = "1.0.1" 
 __module_description__ = "Replies with random replies to /whois."
 
 #This only works on Inspircd for now.
@@ -69,11 +72,13 @@ def whois(word, word_eol, userdata):
                # Replace tags with the appropriate info...
                if randomreply.find("~mynick~") != -1:
                     randomreply2 = randomreply.replace("~mynick~", mynick)
-               elif randomreply.find("~nickname~") != -1:
-                    randomreply2 = randomreply.replace("~nickname~", nick)
                else:
                     randomreply2 = randomreply
-               xchat.command("NOTICE "+nick+" "+randomreply2)
+               if randomreply.find("~nickname~") != -1:
+                    randomreply3 = randomreply2.replace("~nickname~", nick)
+               else:
+                    randomreply3 = randomreply2
+               xchat.command("NOTICE "+nick+" "+randomreply3)
           else:
                pass
      except IndexError:
