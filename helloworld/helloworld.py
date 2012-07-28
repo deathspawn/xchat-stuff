@@ -42,14 +42,14 @@ __module_version__ = "0.1"
 __module_description__ = "Example layout for a python script."
 
 # Define working directory here.
-randfolder = xchat.get_info("xchatdir") + "/helloworld/"
-readmefile = randfolder+"README"
-configfile = randfolder+"helloworld.conf"
+hellofolder = xchat.get_info("xchatdir") + "/helloworld/"
+readmefile = hellofolder+"README"
+configfile = hellofolder+"helloworld.conf"
 
 # Check to see if the folder exists.
-if not os.path.exists(randfolder):
+if not os.path.exists(hellofolder):
     # Make the folder...
-    os.makedirs(randfolder)
+    os.makedirs(hellofolder)
     # Make the README...
     readmefilemake = open(readmefile, "w")
     readmelist = ["This is an example script for XChat. It implements a couple new ideas within it.\n",
@@ -74,7 +74,7 @@ if not os.path.exists(randfolder):
     # Print out welcome message.
     print "=========="
     print "This is an example welcome message. It will only be shown when the configuration folder doesn't exist."
-    print "This script has created a folder at "+randfolder
+    print "This script has created a folder at "+hellofolder
     print "Inside, you will find a README (Please read, it actually is worth it.) and a simple config. The config only has one option, plenty more can be added easily."
     print " "
     print "Please report any issues at the GitHub page. See /helloworld gitinfo for git info."
