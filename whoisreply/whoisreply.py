@@ -74,7 +74,7 @@ def whois(word, word_eol, userdata):
                     randomreply2 = randomreply.replace("~mynick~", mynick)
                else:
                     randomreply2 = randomreply
-               if randomreply.find("~nickname~") != -1:
+               if randomreply2.find("~nickname~") != -1:
                     randomreply3 = randomreply2.replace("~nickname~", nick)
                else:
                     randomreply3 = randomreply2
