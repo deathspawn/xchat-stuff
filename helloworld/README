@@ -1,7 +1,6 @@
-This is an example script for XChat. It impliments a couple new ideas within it.
-The first idea is generating all necessary files within the script. While this method may seem a bit tedious to the scripter,
-it lets the user be able to easily load the script and get all of the necessary files on first run.
-It's simple without being simple!.
+This is an example script for XChat. It implements a couple new ideas within it.
+The first idea is generating all necessary files within the script. While this method may seem a bit tedious to the scripter,it lets the user be able to easily load the script and get all of the necessary files on first run.
+It's simple without being simple!
 
 The second idea is making folders within the XChat directory with the respective plugin name. An author can easily change the folder
 above and make their own files generate inside using this method. This prevents clutter in the XChat directory.

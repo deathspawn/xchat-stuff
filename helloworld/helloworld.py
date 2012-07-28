@@ -20,7 +20,7 @@
 #
 # ABOUT
 #
-#  This impliments a new idea for making python scripts (And other scripts) inside XChat.
+#  This implements a new idea for making python scripts (And other scripts) inside XChat.
 # Configuration files are generated and put into the respective plugin folder.
 # The location of the folder can be called with "command" location.
 # 
@@ -52,7 +52,7 @@ if not os.path.exists(randfolder):
     os.makedirs(randfolder)
     # Make the README...
     readmefilemake = open(readmefile, "w")
-    readmelist = ["This is an example script for XChat. It impliments a couple new ideas within it.\n",
+    readmelist = ["This is an example script for XChat. It implements a couple new ideas within it.\n",
     "The first idea is generating all necessary files within the script. While this method may seem a bit tedious to the scripter,\n",
     "it lets the user be able to easily load the script and get all of the necessary files on first run.\n",
     "It's simple without being simple!.\n",
