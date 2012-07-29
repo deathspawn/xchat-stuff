@@ -31,13 +31,11 @@
 # 0.1
 # Released to public.
 #
-# 1.0
+# 0.2
 # Cleaned up the readme. Made it easier to understand. (I hope.)
 # Changed the checking method so the README can be updated and it will also update the user on load if changed.
 # Changed hellofolder to configfolder so that it doesn't have to be changed for other scripts and can just be copied into them instead.
 # Added conf.example generation and made it work like the README file so you can update that without harming the original config.
-# Added version checks for both the README and config so that you can easily change them when you update a config.
-# Changing the files will update the users on load, and the config update should alert before an error if the layout is kept the same.
 
 # Import the necessary modules.
 import xchat

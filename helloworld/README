@@ -1,9 +1,27 @@
 This is an example script for XChat. It implements a couple new ideas within it.
-The first idea is generating all necessary files within the script. While this method may seem a bit tedious to the scripter,it lets the user be able to easily load the script and get all of the necessary files on first run.
-It's simple without being simple!
+The first idea is generating all necessary files within the script. While this method may seem a bit tedious to the scripter,
+it lets the user be able to easily load the script and get all of the necessary files on first run.
 
 The second idea is making folders within the XChat directory with the respective plugin name. An author can easily change the folder
 above and make their own files generate inside using this method. This prevents clutter in the XChat directory.
 
 This script can be kept loaded, it merely has some test commands for a general layout. You can choose to use all of it or some of it.
-I would hope that if you didn't use any of it that you would still take the idea into consideration and make your script easier to use.
+To the end user, this script is actually useless, but to a tester/coder, it is.
+When you reload the script, it will show the help command, or you can look in the README in the config folder. The command can be changed on the fly which is why it cannot be listed here.
+
+This script makes a folder upon load so check inside of it for more info.
+
+The config fille will be read within the script, but in order to change the main command you need to reload the script. I would hope that if you didn't use any of it that you would still take the idea into consideration and make your script easier to use.
+
+CHANGELOG
+
+0.1
+Released to public.
+
+1.0
+Cleaned up the readme. Made it easier to understand. (I hope.)
+Changed the checking method so the README can be updated and it will also update the user on load if changed.
+Changed hellofolder to configfolder so that it doesn't have to be changed for other scripts and can just be copied into them instead.
+Added conf.example generation and made it work like the README file so you can update that without harming the original config.
+Added version checks for both the README and config so that you can easily change them when you update a config.
+Changing the files will update the users on load, and the config update should alert before an error if the layout is kept the same.
